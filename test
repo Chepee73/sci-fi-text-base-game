@@ -1,0 +1,13 @@
+require './sci-fi_item'
+require 'test/unit'
+
+class ItemTest < Test::Unit::TestCase
+  def test_create_plasma_shield
+    assert_nothing_raised do
+      shield = PlasmaShield.new
+      puts shield
+    end
+  end
+end
+
+
