@@ -18,7 +18,7 @@ class World
           if room_name == ""
             @world[x => y] = nil
           else
-            @world[x => y] = room_name
+            @world[x => y] = Room.new(x, y)
           end
         end
       end
